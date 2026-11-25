@@ -41,5 +41,6 @@ First release.
 - Settings: theme, language (English, 한국어, 日本語, Español), organize folder and layout,
   macOS screenshot location, search scope, analysis options, cache management.
 
-[Unreleased]: https://github.com/hoyakdh/clear-screenshot/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/hoyakdh/clear-screenshot/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/hoyakdh/clear-screenshot/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/hoyakdh/clear-screenshot/releases/tag/v0.1.0

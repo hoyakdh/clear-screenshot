@@ -34,6 +34,12 @@ TODAY="$(date +%Y-%m-%d)"
 if ! grep -q "^## \[$VERSION\]" CHANGELOG.md; then
   perl -0pi -e "s/## \[Unreleased\]\n/## [Unreleased]\n\n## [$VERSION] - $TODAY\n/" CHANGELOG.md
 fi
+# keep the compare links at the bottom of the changelog in step
+PREV="$(git describe --tags --abbrev=0 2>/dev/null || true)"
+REPO_URL="https://github.com/$(gh repo view --json nameWithOwner --jq .nameWithOwner)"
+if [[ -n "$PREV" ]] && ! grep -q "^\[$VERSION\]:" CHANGELOG.md; then
+  perl -pi -e "s#^\[Unreleased\]: .*#[Unreleased]: $REPO_URL/compare/$TAG...HEAD\n[$VERSION]: $REPO_URL/compare/$PREV...$TAG#" CHANGELOG.md
+fi
 NOTES="$(awk -v v="$VERSION" '
   $0 ~ "^## \\[" v "\\]" { on = 1; next }
   on && /^## \[/ { exit }
