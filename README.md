@@ -9,7 +9,25 @@
   understands what is in them, and helps you organize and clean them up — all on-device.
 </p>
 
+<p align="center">
+  <img src="docs/screenshots/main.png" alt="Clear Screenshot main window" width="900">
+</p>
+
 ---
+
+## Screenshots
+
+| Spotlight-style search (`⌘F`) | Quick Tidy — keep one per similar group |
+| --- | --- |
+| <img src="docs/screenshots/search.png" alt="Search by what the picture shows" width="440"> | <img src="docs/screenshots/tidy.png" alt="Quick Tidy marks the best shot to keep" width="440"> |
+| Search finds screenshots by text, by what the picture shows (“drinks” → coffee, bubble tea), by app or device. | Similar screenshots are grouped with Vision feature prints; the best one is labelled **Keep**, the rest are selected for the Trash. |
+
+<p align="center">
+  <img src="docs/screenshots/settings.png" alt="Settings" width="640"><br>
+  <sub>Settings — theme, language, organize folder, capture-app folders, on-device analysis, cache.</sub>
+</p>
+
+<sub>Screenshots use synthetic demo data.</sub>
 
 ## Highlights
 
