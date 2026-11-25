@@ -1,6 +1,6 @@
 [package]
 name = "clear-screenshot"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Find and tidy up macOS screenshots"
 

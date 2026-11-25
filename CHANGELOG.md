@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-25
+
 ### Changed
 - Minimum macOS raised from 11 to **13 Ventura** (needed for Korean text recognition and the UI's
   WebKit features). Apple silicon only; Intel Macs are not supported.
