@@ -52,11 +52,20 @@
 
 ## Requirements
 
-| Feature | macOS |
-| --- | --- |
-| App | 11 Big Sur or later (Apple silicon) |
-| Liquid Glass sidebar | 26 or later (falls back to CSS glass) |
-| On-device picture understanding | 27 or later with Apple Intelligence enabled |
+> **Apple silicon Mac (M1 or later) running macOS 13 Ventura or later.**
+> Intel Macs are **not supported**, and the app will not open on macOS 12 Monterey or earlier.
+
+| | Minimum | Why |
+| --- | --- | --- |
+| Mac | Apple silicon (M1, M2, M3, M4 …) | The app is built for arm64 only; it does not run on Intel Macs (no Rosetta build). |
+| macOS | **13 Ventura** | Korean text recognition in Apple's Vision framework and the modern WebKit features the UI uses arrive in macOS 13. |
+
+Some features need a newer macOS; on older versions the app still works and simply skips them:
+
+| Feature | Needs | On older macOS |
+| --- | --- | --- |
+| Native Liquid Glass sidebar | macOS 26 Tahoe | A CSS glass sidebar is used instead |
+| On-device picture understanding (Apple's foundation model) | macOS 27 with Apple Intelligence turned on | Vision image classification is used instead |
 
 ## Install
 
