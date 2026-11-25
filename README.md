@@ -151,4 +151,5 @@ CHANGELOG section as release notes.
 
 ## License
 
-Private project — all rights reserved.
+No open-source license has been chosen yet, so all rights are reserved: you can read the code and
+download the app, but copying, modifying or redistributing the code is not permitted.
