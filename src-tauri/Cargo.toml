@@ -1,0 +1,35 @@
+[package]
+name = "clear-screenshot"
+version = "0.1.0"
+edition = "2021"
+description = "Find and tidy up macOS screenshots"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset", "macos-private-api", "tray-icon", "image-png"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+rayon = "1"
+trash = "5"
+chrono = "0.4"
+dirs = "6"
+unicode-normalization = "0.1"
+objc2 = "0.6.5"
+objc2-foundation = "0.3.2"
+block2 = "0.6.2"
+objc2-app-kit = "0.3.2"
+objc2-photos = "0.3.2"
+objc2-core-foundation = "0.3"
+objc2-vision = "0.3"
+regex = "1"
+objc2-image-io = "0.3"
+tauri-plugin-dialog = "2"
+notify = "8"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
